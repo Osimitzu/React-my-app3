@@ -1,7 +1,25 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 10%;
+  box-shadow: 2px 2px 10px;
+  padding: 20px;
+
 }
 
 div.image>img {
@@ -10,12 +28,15 @@ div.image>img {
 }
 
 button {
-  background-color: lightpink;
+  font-size: xx-large;
+  box-shadow: 2px 2px 10px;
+  border-radius: 10px;
 } 
 
 li {
   list-style: none;
   text-align: left;
+  font-size: larger;
 }
 
 

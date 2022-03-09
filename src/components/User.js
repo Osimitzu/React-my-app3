@@ -18,9 +18,18 @@ const User = () => {
 
     // console.log(users.length)
 
+
+    // Cambiar color de manera aleatoria en el body // // Cambiar color de manera aleatoria en el body // 
+    const colors = [ "#845EC2", "#D65DB1", "#FF6F91", "#FF9671", "#FFC75F", "#F9F871" ];
+    
+    const color = colors[Math.floor(Math.random() * 6)]
+
+    document.body.style = `background: ${color}`
+    // Cambiar color de manera aleatoria en el body // // Cambiar color de manera aleatoria en el body // 
+    
     return (
-        <div>
-            <h3>{user.name.title} {user.name.first} {user.name.last}</h3>
+        <div className='card' style={{color:color}}>
+            <h1>{user.name.title} {user.name.first} {user.name.last}</h1>
             <div className='image'>
                 <img src={user.picture.large} alt="fotoDeUsuario"/> 
             </div>
@@ -29,7 +38,7 @@ const User = () => {
                 <li><i className="fa-solid fa-phone fa-2x"></i>{user.phone}</li>
                 <li><i className="fa-solid fa-compass fa-2x"></i>{user.location.country}, {user.location.city}, {user.location.state}</li>
             </ul>
-            <button onClick={changeUser}>Change User</button>
+            <button onClick={changeUser} style={{color:color}}>Change User</button>
         </div>
     );
 };
