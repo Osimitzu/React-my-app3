@@ -34,11 +34,11 @@ const User = () => {
                 <img src={user.picture.large} alt="fotoDeUsuario"/> 
             </div>
             <ul>
-                <li><i className="fa-solid fa-envelope fa-2x"></i>{user.email}</li>
-                <li><i className="fa-solid fa-phone fa-2x"></i>{user.phone}</li>
-                <li><i className="fa-solid fa-compass fa-2x"></i>{user.location.country}, {user.location.city}, {user.location.state}</li>
+                <li><i class="fas fa-envelope fa-2x"></i>{user.email}</li>
+                <li><i class="fas fa-phone-alt fa-2x"></i>{user.phone}</li>
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>{user.location.country}, {user.location.city}, {user.location.state}</li>
             </ul>
-            <button onClick={changeUser} style={{color:color}}>Change User</button>
+            <button onClick={changeUser} style={{color:color}}><i class="fas fa-random fa-2x fa-spin"></i></button>
         </div>
     );
 };
