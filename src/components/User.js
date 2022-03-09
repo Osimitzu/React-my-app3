@@ -27,7 +27,7 @@ const User = () => {
             <ul>
                 <li><i className="fa-solid fa-envelope fa-2x"></i>{user.email}</li>
                 <li><i className="fa-solid fa-phone fa-2x"></i>{user.phone}</li>
-                <li><i class="fa-solid fa-compass fa-2x"></i>{user.location.country}, {user.location.city}, {user.location.state}</li>
+                <li><i className="fa-solid fa-compass fa-2x"></i>{user.location.country}, {user.location.city}, {user.location.state}</li>
             </ul>
             <button onClick={changeUser}>Change User</button>
         </div>
