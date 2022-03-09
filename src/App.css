@@ -1,5 +1,21 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+div.image>img {
+  /* background-color: aqua; */
+  border-radius: 50%;
+}
+
+button {
+  background-color: lightpink;
+} 
+
+li {
+  list-style: none;
+  text-align: left;
 }
 
 
